@@ -1,12 +1,12 @@
 #!/usr/bin/ruby
 # This script installs to /usr/local only. To install elsewhere (which is
-# unsupported) you can untar https://github.com/Homebrew/brew/tarball/master
+# unsupported) you can untar https://github.com/cerisola/brew/tarball/master
 # anywhere you like.
 HOMEBREW_PREFIX = "/usr/local".freeze
 HOMEBREW_REPOSITORY = "/usr/local/Homebrew".freeze
 HOMEBREW_CORE_TAP = "/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core".freeze
 HOMEBREW_CACHE = "#{ENV["HOME"]}/Library/Caches/Homebrew".freeze
-BREW_REPO = "https://github.com/Homebrew/brew".freeze
+BREW_REPO = "https://github.com/cerisola/brew".freeze
 
 # TODO: bump version when new macOS is released
 MACOS_LATEST_SUPPORTED = "10.14".freeze
@@ -210,7 +210,7 @@ puts "#{HOMEBREW_PREFIX}/etc/bash_completion.d/brew"
 puts HOMEBREW_REPOSITORY.to_s
 
 # Keep relatively in sync with
-# https://github.com/Homebrew/brew/blob/master/Library/Homebrew/keg.rb
+# https://github.com/cerisola/brew/blob/master/Library/Homebrew/keg.rb
 group_chmods = %w[bin etc include lib sbin share opt var
                   Frameworks
                   etc/bash_completion.d lib/pkgconfig
